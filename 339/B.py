@@ -36,6 +36,6 @@ for i in range(n):
     y = (y + vy) % w
 
 # gridリストの各行をfor文で出力
-# *で要素を展開して、、sepで空白なしで出力する。
+# *で要素を展開して、sepで空白なしで出力する。
 for j in grid:
     print(*j, sep='')
