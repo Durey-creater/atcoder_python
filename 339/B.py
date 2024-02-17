@@ -20,13 +20,13 @@ grid = [['.' for _ in range(w)] for _ in range(h)]
 x, y, v = 0, 0, 0
 for i in range(n):
     # 座標のが”.”の場合
-    if grid[x][y] == '.':
+    if grid[y][x] == '.':
         # ”#”に変更
-        grid[x][y] = '#'
+        grid[y][x] = '#'
         # 向いている方向を変更
         v = (v + 1) % 4
     else: 
-        grid[x][y] = '.'
+        grid[y][x] = '.'
         v = (v - 1) % 4
     
     #vx, vyに座標の移動量を代入
@@ -39,3 +39,4 @@ for i in range(n):
 # *で要素を展開して、sepで空白なしで出力する。
 for j in grid:
     print(*j, sep='')
+
