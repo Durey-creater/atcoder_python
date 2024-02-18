@@ -32,8 +32,8 @@ for i in range(n):
     #vx, vyに座標の移動量を代入
     vx, vy = vector[v]
     # 移動量を足して、h, wで割った余りを代入(トーラス状にするため)
-    x = (x + vx) % h
-    y = (y + vy) % w
+    x = (x + vx) % w
+    y = (y + vy) % h
 
 # gridリストの各行をfor文で出力
 # *で要素を展開して、sepで空白なしで出力する。
